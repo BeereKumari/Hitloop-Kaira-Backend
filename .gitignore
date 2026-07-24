@@ -1,0 +1,46 @@
+# ── Secrets / Environment ─────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Python virtual environment ────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Python cache & compiled files ────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── Build & distribution ──────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+.eggs/
+MANIFEST
+
+# ── Uploads / user generated files ────────────────────────────────
+uploads/
+*.pdf
+*.docx
+*.txt
+
+# ── Logs ──────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── IDE & OS ──────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+Thumbs.db

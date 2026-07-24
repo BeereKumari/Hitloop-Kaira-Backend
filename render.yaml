@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: hitloop-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: MONGODB_URI
+        sync: false          # You will paste this in Render dashboard
+      - key: DATABASE_NAME
+        value: Hitloop_Hiring_Platform
+      - key: CEREBRAS_API_KEY
+        sync: false
+      - key: JUDGE0_URL
+        value: https://ce.judge0.com
+      - key: LIVEKIT_URL
+        sync: false
+      - key: LIVEKIT_API_KEY
+        sync: false
+      - key: LIVEKIT_API_SECRET
+        sync: false
+      - key: BEY_API_KEY
+        sync: false
+      - key: BEY_AVATAR_ID
+        sync: false
+      - key: APP_PASSWORD
+        sync: false
+      - key: SENDER_EMAIL
+        sync: false

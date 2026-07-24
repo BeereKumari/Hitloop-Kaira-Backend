@@ -31,7 +31,9 @@ MANIFEST
 uploads/
 *.pdf
 *.docx
-*.txt
+# Ignore uploaded txt files but NOT requirements.txt
+uploads/*.txt
+!requirements.txt
 
 # ── Logs ──────────────────────────────────────────────────────────
 *.log
